@@ -11,11 +11,18 @@ class App extends Component{
       {id:3, task: 'Workout', duration: '30min'}
     ]
   }
+
+  deleteItem = (id) =>{
+    let Items = this.state.Items.filter(Item =>{
+      return Item.id !== id
+    })
+    this.setState({Items})
+  }
   render(){
     return(
       <div className="App">
         To do list app
-        <ToDoItems Items={this.state.Items}/>
+        <ToDoItems Items={this.state.Items} deleteItem={this.deleteItem}/>
         <AddItem />
       </div>
 
