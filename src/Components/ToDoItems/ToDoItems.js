@@ -15,7 +15,7 @@ const ToDoItems = (props) => {
             </div>
         )
      })
-    ): (<p>You have no task today</p>)
+    ): (<p>You have no task</p>)
     return(
         <div className="listItems">
             <div>
