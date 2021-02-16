@@ -6,9 +6,6 @@ import AddItem from "./Components/AddItem/AddItem";
 class App extends Component{
   state = {
     Items : [
-      {id:1, task: 'Homework', duration: 3},
-      {id:2, task: 'Reading', duration: 1},
-      {id:3, task: 'Workout', duration: 2}
     ]
   }
 
@@ -27,10 +24,12 @@ class App extends Component{
   }
   render(){
     return(
-      <div className="App">
-        To do list app
-        <ToDoItems Items={this.state.Items} deleteItem={this.deleteItem}/>
-        <AddItem addItem={this.addItem} />
+      <div className="App container">
+        <h1 className="text-center">To Do List</h1>
+        <div className="table">
+            <ToDoItems Items={this.state.Items} deleteItem={this.deleteItem}/>
+            <AddItem addItem={this.addItem} />
+        </div>
       </div>
 
     );

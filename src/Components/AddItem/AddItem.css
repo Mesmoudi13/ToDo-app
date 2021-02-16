@@ -1,0 +1,16 @@
+#task,#duration{
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(218, 218, 218);
+    outline: unset;
+    border: gray solid 1px;
+    margin: 0;
+
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+#task,#duration{
+    padding: 10px;
+}
